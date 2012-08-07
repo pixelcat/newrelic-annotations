@@ -37,7 +37,7 @@
             <plugin>
                 <groupId>com.github.github</groupId>
                 <artifactId>downloads-maven-plugin</artifactId>
-                <version>0.5</version>
+                <version>0.6</version>
                 <configuration>
                     <description>${project.version} release of ${project.name}</description>
                     <override>true</override>
@@ -47,6 +47,22 @@
                     <execution>
                         <goals>
                             <goal>perform</goal>
+                        </goals>
+                        <phase>release</phase>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.github.github</groupId>
+                <artifactId>site-maven-plugin</artifactId>
+                <version>0.7</version>
+                <configuration>
+                    <branch>refs/heads/gh-pages</branch>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>site</goal>
                         </goals>
                         <phase>release</phase>
                     </execution>
