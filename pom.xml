@@ -23,6 +23,8 @@
         <developerConnection>scm|git|git@github.com:pixelcat/newrelic-annotations.git</developerConnection>
     </scm>
 
+    <url>http://github.com/pixelcat/newrelic-annotation</url>
+
     <build>
         <plugins>
             <plugin>
