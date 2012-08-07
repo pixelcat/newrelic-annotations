@@ -4,7 +4,7 @@
 
     <groupId>net.pixelcat.newrelic</groupId>
     <artifactId>newrelic-annotation</artifactId>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.2</version>
 
     <properties>
         <github.global.server>github</github.global.server>
