@@ -6,6 +6,10 @@
     <artifactId>newrelic-annotation</artifactId>
     <version>1.1-SNAPSHOT</version>
 
+    <properties>
+        <github.global.server>github</github.global.server>
+    </properties>
+
     <developers>
         <developer>
             <email>aaron@workhabit.com</email>
@@ -19,6 +23,37 @@
         <developerConnection>scm|git|git@github.com:pixelcat/newrelic-annotations.git</developerConnection>
     </scm>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.github</groupId>
+                <artifactId>downloads-maven-plugin</artifactId>
+                <version>0.5</version>
+                <configuration>
+                    <description>${project.version} release of ${project.name}</description>
+                    <override>true</override>
+                    <includeAttached>true</includeAttached>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>perform</goal>
+                        </goals>
+                        <phase>release</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>

@@ -11,6 +11,9 @@ import java.lang.annotation.Target;
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
+/**
+ * Marker interface. Will ignore the current transaction and not send data to new relic.
+ */
 public @interface IgnoreTransaction
 {
     // marker

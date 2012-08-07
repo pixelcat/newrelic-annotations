@@ -11,6 +11,11 @@ import java.lang.annotation.Target;
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
+/**
+ * Define a transaction to capture in new relic
+ *
+ * Annotation equivalent of {@see com.newrelic.api.agent.NewRelic#setTransactionName(name, category)}
+ */
 public @interface NewRelicTransaction
 {
     String transactionName();

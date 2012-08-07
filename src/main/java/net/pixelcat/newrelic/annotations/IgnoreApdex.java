@@ -11,6 +11,10 @@ import java.lang.annotation.Target;
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
+/**
+ * Marker interface. When integrated with {@see net.pixelcat.newrelic.aop.NewRelicTransactionAdvice} will not
+ * apply current method to Apdex score.
+ */
 public @interface IgnoreApdex
 {
     // marker

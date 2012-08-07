@@ -9,6 +9,10 @@ import java.util.Map;
  * Copyright 2009 - WorkHabit, Inc. - acs
  * Date: 8/6/12, 10:04 PM
  */
+
+/**
+ * Proxy interface for NewRelic static methods.
+ */
 public interface NewRelicProxy
 {
     String getBrowserTimingFooter();
