@@ -4,7 +4,7 @@
 
     <groupId>net.pixelcat.newrelic</groupId>
     <artifactId>newrelic-annotation</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <developers>
         <developer>
