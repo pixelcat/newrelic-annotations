@@ -58,11 +58,12 @@
                 <version>0.7</version>
                 <configuration>
                     <branch>refs/heads/gh-pages</branch>
+                    <message>Creating site for ${project.version} of ${project.name}</message>
                 </configuration>
                 <executions>
                     <execution>
                         <goals>
-                            <goal>site</goal>
+                            <goal>perform</goal>
                         </goals>
                         <phase>release</phase>
                     </execution>
