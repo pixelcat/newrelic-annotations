@@ -4,7 +4,7 @@
 
     <groupId>net.pixelcat.newrelic</groupId>
     <artifactId>newrelic-annotation</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
 
     <developers>
         <developer>
@@ -96,11 +96,11 @@
     <distributionManagement>
         <repository>
             <id>nexus.hourglassone.com-releases</id>
-            <url>http://nexus.hourglassone.com/nexus/content/repostories/releases</url>
+            <url>http://nexus.hourglassone.com/nexus/content/repositories/releases</url>
         </repository>
         <snapshotRepository>
             <id>nexus.hourglassone.com-snapshots</id>
-            <url>http://nexus.hourglassone.com/nexus/content/repostories/releases</url>
+            <url>http://nexus.hourglassone.com/nexus/content/repositories/releases</url>
         </snapshotRepository>
     </distributionManagement>
 
