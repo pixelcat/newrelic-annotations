@@ -80,4 +80,25 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus.hourglassone.com-releases</id>
+            <url>http://nexus.hourglassone.com/nexus/content/repostories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus.hourglassone.com-snapshots</id>
+            <url>http://nexus.hourglassone.com/nexus/content/repostories/releases</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>nexus.hourglassone.com-releases</id>
+            <url>http://nexus.hourglassone.com/nexus/content/repositories/releases</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
 </project>
