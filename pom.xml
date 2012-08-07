@@ -16,7 +16,7 @@
 
     <scm>
         <connection>scm|git|https://github.com/pixelcat/newrelic-annotations.git</connection>
-        <developerConnection>scm|git|git@github.com:/newrelic-annotations.git</developerConnection>
+        <developerConnection>scm|git|git@github.com:pixelcat/newrelic-annotations.git</developerConnection>
     </scm>
 
     <dependencies>
