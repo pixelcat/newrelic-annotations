@@ -62,10 +62,6 @@ import net.pixelcat.newrelic.annotations.NewRelicTransaction;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-/**
- * Copyright 2009 - WorkHabit, Inc. - acs
- * Date: 8/6/12, 9:02 PM
- */
 public class TestTransaction
 {
     private static Log log = LogFactory.getLog(TestTransaction.class);
