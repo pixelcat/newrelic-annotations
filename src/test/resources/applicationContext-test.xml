@@ -8,7 +8,6 @@
     <bean id="newRelicTransactionAdvice" class="net.pixelcat.newrelic.aop.NewRelicTransactionAdvice">
         <property name="newRelicProxy" ref="newRelicProxyBean"/>
     </bean>
-    <bean id="testTransaction" class="net.pixelcat.newrelic.test.TestTransaction"/>
     <bean id="newRelicProxyBean" class="org.springframework.aop.framework.ProxyFactoryBean">
         <property name="targetSource" ref="newRelicProxySwappable"/>
     </bean>
@@ -17,4 +16,5 @@
     </bean>
 
     <bean id="newRelicProxy" class="net.pixelcat.newrelic.support.NewRelicProxyImpl"/>
+    <bean id="testTransaction" class="net.pixelcat.newrelic.test.TestTransaction"/>
 </beans>
